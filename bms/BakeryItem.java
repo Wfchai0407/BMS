@@ -1,4 +1,4 @@
-package BakeryManagementSystem;
+package bms;
 
 public class BakeryItem 
 {
@@ -37,5 +37,9 @@ public class BakeryItem
     {
     	return quantity;
     }
+    public void displayItem()
+	{
+		System.out.println("Item Name: " +itemName + "\nPrice: " +price + "\nQuantity: " +quantity);
+	}
 
 }
