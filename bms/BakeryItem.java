@@ -36,10 +36,8 @@ public class BakeryItem {
     }
     
     public void displayItem() {
-		System.out.println("Item Name: " +itemName + "\nPrice: " +price + "\nQuantity: " +quantity);
-	}
-    
-    public String toString() {
-        return "Item Name: " + itemName + ", Price: RM" + price + ", Quantity: " + quantity;
+        System.out.println("Item Name: " + itemName);
+        System.out.println("Price: RM" + price);
+        System.out.println("Quantity: " + quantity);
     }
 }
