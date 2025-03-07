@@ -1,45 +1,45 @@
 package bms;
 
-public class BakeryItem 
-{
+public class BakeryItem {
     private String itemName;
     private double price;
     private int quantity;
-
-    public BakeryItem(String itemName, double price, int quantity) 
-    {
+ 
+    public BakeryItem(String itemName, double price, int quantity) {
         this.itemName = itemName;
-        this.price = price;
-        this.quantity = quantity;
-    }
-    
-    public void updateQuantity(int quantity)
-    {
+    	this.price = price;
     	this.quantity = quantity;
     }
     
-    public void updatePrice(double price)
-    {
+    public void updateItemName(String itemName) {
+    	this.itemName = itemName;
+    }
+    
+    public void updatePrice(double price) {
     	this.price = price;
     }
     
-    public String getItemName()
-    {
+    public void updateQuantity(int quantity) {
+    	this.quantity = quantity;
+    }
+    
+    public String getItemName() {
     	return itemName;
     }
     
-    public double getPrice()
-    {
+    public double getPrice() {
     	return price;
     }
     
-    public int getQuantity()
-    {
+    public int getQuantity() {
     	return quantity;
     }
-    public void displayItem()
-	{
+    
+    public void displayItem() {
 		System.out.println("Item Name: " +itemName + "\nPrice: " +price + "\nQuantity: " +quantity);
 	}
-
+    
+    public String toString() {
+        return "Item Name: " + itemName + ", Price: RM" + price + ", Quantity: " + quantity;
+    }
 }
