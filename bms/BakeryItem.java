@@ -11,15 +11,15 @@ public class BakeryItem {
     	this.quantity = quantity;
     }
     
-    public void updateItemName(String itemName) {
+    public void setItemName(String itemName) {
     	this.itemName = itemName;
     }
     
-    public void updatePrice(double price) {
+    public void setPrice(double price) {
     	this.price = price;
     }
     
-    public void updateQuantity(int quantity) {
+    public void setQuantity(int quantity) {
     	this.quantity = quantity;
     }
     
