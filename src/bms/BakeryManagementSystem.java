@@ -6,10 +6,14 @@ import java.util.Scanner;
 public class BakeryManagementSystem {
 	private ArrayList<BakeryItem> inventory = new ArrayList<>(); //List of the items
 	private Scanner sc = new Scanner(System.in);
-	
+	public void initializeItem()
+	{	inventory.add(new BakeryItem("White Bread",1.55 , 50));
+		inventory.add(new BakeryItem("Baguette",5.00 , 30));
+		inventory.add(new BakeryItem("Cake",7.50 , 20));
+	}
 	public void startSystem() {
 		int choice;
-		
+		initializeItem();
 		do {
 			System.out.println("\n-----Bakery Management System-----");
 			System.out.println("1. Add Item");
@@ -19,6 +23,7 @@ public class BakeryManagementSystem {
 			System.out.println("0. Exit");
 			System.out.print("Enter choice: ");
 			choice = sc.nextInt();
+			
 			sc.nextLine(); //Use to clear the newline character after the input
 			
 			switch(choice) {
@@ -92,4 +97,12 @@ public class BakeryManagementSystem {
         	}
         }
     }
+    public BakeryItem getItemFromInventory(String itemName) // to let other classes to access the Item Details
+    {
+        for (BakeryItem item : inventory) {
+            if (item.getItemName().equalsIgnoreCase(itemName)) {
+                return item; // return item
+            }
+        }return null;
+}
 }

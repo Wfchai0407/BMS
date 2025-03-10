@@ -6,6 +6,7 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
         BakeryManagementSystem system = new BakeryManagementSystem();
+        ArrayList<Order> orderList = new ArrayList<>();
         int choice;
         
         do {
@@ -22,7 +23,8 @@ public class Main {
 			switch(choice) {
 				case 1 :system.startSystem();
 						break;// Start running the menu ;
-				case 2 :System.out.println("Haven't implement") ;
+				case 2 : Order order=new Order(system);
+						order.PlaceOrder();
 						break;
 				case 3:System.out.println("Haven't implement") ;
 						break;
