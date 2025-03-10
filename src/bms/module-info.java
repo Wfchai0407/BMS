@@ -1,3 +1,5 @@
 
-module Assignment {
+
+module BMS {
+    exports bms;
 }
