@@ -1,5 +1,6 @@
 package bms;
 import java.util.*;
+import java.util.ArrayList;
 
 public class Main {
 	public static void main(String[] args) {
@@ -19,15 +20,17 @@ public class Main {
 			sc.nextLine(); //Use to clear the newline character after the input
 			
 			switch(choice) {
-				case 1 ->system.startSystem(); // Start running the menu ;
-				case 2 ->System.out.println("Haven't implement") ;
-						
-				case 3 -> System.out.println("Haven't implement") ;
-						
-				case 4 ->System.out.println("Haven't implement") ;
-				case 0 ->System.out.println("Exiting...");
-							
-				default->System.out.println("Invalid choice.");
+				case 1 :system.startSystem();
+						break;// Start running the menu ;
+				case 2 :System.out.println("Haven't implement") ;
+						break;
+				case 3:System.out.println("Haven't implement") ;
+						break;
+				case 4 :System.out.println("Haven't implement") ;
+						break;
+				case 0 :System.out.println("Exiting...");
+						break;	
+				default:System.out.println("Invalid choice.");
 			}
 		}while(choice != 0); //Keep looping until the user choose 0
 	}	

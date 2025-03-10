@@ -22,12 +22,17 @@ public class BakeryManagementSystem {
 			sc.nextLine(); //Use to clear the newline character after the input
 			
 			switch(choice) {
-				case 1 -> addItem();
-				case 2 -> updateItem();
-				case 3 -> removeItem();
-				case 4 -> displayInventory();
-				case 0 -> System.out.println("Exiting...");
-				default -> System.out.println("Invalid choice.");
+				case 1 :addItem();
+						break;
+				case 2 : updateItem();
+						break;
+				case 3 : removeItem();
+						break;
+				case 4 : displayInventory();
+						break;
+				case 0 : System.out.println("Exiting...");
+						break;
+				default: System.out.println("Invalid choice.");
 			}
 		}while(choice != 0); //Keep looping until the user choose 0
 	}	

@@ -1,5 +1,8 @@
 
 
 module BMS {
-    exports bms;
+    
+    requires java.base; 
+   
+
 }
