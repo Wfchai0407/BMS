@@ -4,6 +4,7 @@ public class BakeryItem {
     private String itemName;
     private double price;
     private int quantity;
+    
     public BakeryItem()
     {}
     public BakeryItem(String itemName, double price, int quantity) {

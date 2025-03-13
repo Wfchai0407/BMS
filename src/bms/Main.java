@@ -7,7 +7,7 @@ public class Main {
 		Scanner sc=new Scanner(System.in);
         BakeryManagementSystem system = new BakeryManagementSystem();
         ArrayList<Order> orderList = new ArrayList<>();
-        int choice;
+        int ch;
         
         do {
 			System.out.println("\n-----Bakery Management System-----");
@@ -17,10 +17,10 @@ public class Main {
 			System.out.println("4. ");
 			System.out.println("0. Exit");
 			System.out.print("Enter choice: ");
-			choice = sc.nextInt();
+			ch = sc.nextInt();
 			sc.nextLine(); //Use to clear the newline character after the input
 			
-			switch(choice) {
+			switch(ch) {
 				case 1 :system.startSystem();
 						break;// Start running the menu ;
 				case 2 : Order order=new Order(system);
@@ -34,7 +34,7 @@ public class Main {
 						break;	
 				default:System.out.println("Invalid choice.");
 			}
-		}while(choice != 0); //Keep looping until the user choose 0
+		}while(ch != 0); //Keep looping until the user choose 0
 	}	
 	
 	}
