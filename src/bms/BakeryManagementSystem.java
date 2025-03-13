@@ -1,7 +1,6 @@
 package bms;
 
-import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.*;
 
 public class BakeryManagementSystem {
 	private ArrayList<BakeryItem> inventory = new ArrayList<>(); //List of the items
